@@ -1,10 +1,10 @@
 # 下面的都是废话，其实只需要以下几条语句
-yum -y install git
-git clone https://github.com/flyzy2005/ss-fly
-git checkout master
-ss-fly/ss-fly.sh -ssr
-python /usr/local/shadowsocks/server.py -c /etc/shadowsocks.json -d start
-
+- yum -y install git
+- git clone https://github.com/flyzy2005/ss-fly
+- git checkout master
+- ss-fly/ss-fly.sh -ssr
+- python /usr/local/shadowsocks/server.py -c /etc/shadowsocks.json -d start
+#
 {
     "server":"0.0.0.0",
     "server_ipv6":"[::]",
