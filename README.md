@@ -1,3 +1,40 @@
+# 下面的都是废话，其实只需要以下几条语句
+yum -y install git
+git clone https://github.com/flyzy2005/ss-fly
+git checkout master
+ss-fly/ss-fly.sh -ssr
+python /usr/local/shadowsocks/server.py -c /etc/shadowsocks.json -d start
+
+{
+    "server":"0.0.0.0",
+    "server_ipv6":"[::]",
+    "local_address":"127.0.0.1",
+    "local_port":1080,
+    "port_password": {
+    "8080": "zkd",
+    "8081": "sunyin01",
+    "8082": "sunyin02",
+    "8083": "sunyin03",
+    "8084": "sunyin04",
+    "8085": "sunyin05",
+    "8086": "sunyin06",
+    "8087": "sunyin07",
+    "8088": "sunyin08",
+    "9000": "sunyin"
+    },
+    "timeout":600,
+    "method":"rc4-md5",
+    "protocol":"origin",
+    "protocol_param":"",
+    "obfs":"plain",
+    "obfs_param":"",
+    "redirect":"",
+    "dns_ipv6":false,
+    "fast_open":false,
+    "workers":1
+}
+
+
 一键脚本安装shadowsocks/shadowsocksR/V2Ray + 开启bbr
 ---
 
